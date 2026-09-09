@@ -554,6 +554,11 @@
             <textarea id="f-mensaje" name="mensaje" rows="3" placeholder="Cuéntanos cualquier detalle importante para tu encargo"></textarea>
           </div>
 
+          <label class="field-checkbox">
+            <input type="checkbox" id="f-privacidad" name="privacidad" required>
+            <span>He leído y acepto la <a href="legal.html#privacidad" target="_blank" rel="noopener">política de privacidad</a>.</span>
+          </label>
+
           <div class="form-submit">
             <button class="btn btn-primary" type="submit">
               <span>Enviar solicitud</span>
@@ -609,10 +614,21 @@
 
     <div class="footer-bottom">
       <span>© <span id="year">2026</span> Ámbar. Todos los derechos reservados.</span>
-      <span>Obrador artesanal de autor</span>
+      <span class="footer-legal-links">
+        <a href="legal.html#aviso-legal">Aviso legal</a>
+        <a href="legal.html#privacidad">Privacidad</a>
+        <a href="legal.html#cookies">Cookies</a>
+      </span>
     </div>
   </div>
 </footer>
+
+<div class="cookie-notice" id="cookieNotice" hidden>
+  <div class="wrap cookie-notice-inner">
+    <p>Este sitio no usa cookies de analítica ni publicidad. Solo carga tipografías desde Google Fonts, lo que implica compartir tu dirección IP con Google al visitar la página. <a href="legal.html#cookies">Más información</a>.</p>
+    <button class="cookie-notice-btn" id="cookieAccept" type="button">Entendido</button>
+  </div>
+</div>
 
 <script src="js/main.js"></script>
 </body>

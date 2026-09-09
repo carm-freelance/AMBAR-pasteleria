@@ -882,6 +882,23 @@ section{ padding-block: var(--section-space); }
   border-color: var(--amber);
 }
 .field input::placeholder, .field textarea::placeholder{ color: var(--ash-40); }
+.field-checkbox{
+  display: flex;
+  align-items: flex-start;
+  gap: .7rem;
+  font-size: .84rem;
+  color: var(--ash);
+  cursor: pointer;
+}
+.field-checkbox input{
+  margin-top: .2rem;
+  width: 16px;
+  height: 16px;
+  flex: none;
+  accent-color: var(--ink);
+}
+.field-checkbox a{ color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+.field-checkbox a:hover{ color: var(--amber-dark); }
 .form-row-2{ display: grid; gap: 1.4rem; }
 .form-note{ margin-top: -.3rem; font-size: .78rem; color: var(--ash); }
 .form-submit{ margin-top: .6rem; display: flex; flex-direction: column; gap: .9rem; }
@@ -974,6 +991,9 @@ section{ padding-block: var(--section-space); }
   font-size: .78rem;
   color: rgba(246,239,226,.5);
 }
+.footer-legal-links{ display: flex; flex-wrap: wrap; gap: .3rem 1.2rem; }
+.footer-legal-links a{ color: inherit; text-decoration: none; }
+.footer-legal-links a:hover{ color: var(--amber); }
 
 @media (min-width: 720px){
   .footer-grid{ grid-template-columns: 1.3fr 1fr 1fr; }
@@ -989,6 +1009,51 @@ section{ padding-block: var(--section-space); }
   transition: opacity .7s var(--ease), transform .7s var(--ease);
 }
 .reveal.is-visible{ opacity: 1; transform: none; }
+
+/* ---------- Cookie notice ---------- */
+.cookie-notice{
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  z-index: 90;
+  padding: 1rem;
+}
+.cookie-notice[hidden]{ display: none; }
+.cookie-notice-inner{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 760px;
+  margin-inline: auto;
+  padding: 1.1rem 1.3rem;
+  background: var(--ink);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+}
+.cookie-notice p{
+  flex: 1 1 300px;
+  margin: 0;
+  font-size: .8rem;
+  line-height: 1.6;
+  color: rgba(246,239,226,.8);
+}
+.cookie-notice a{ color: var(--amber); text-decoration: underline; text-underline-offset: 3px; }
+.cookie-notice a:hover{ color: var(--cream); }
+.cookie-notice-btn{
+  flex: none;
+  padding: .65rem 1.2rem;
+  background: var(--amber);
+  color: var(--paper);
+  border-radius: .25rem;
+  font-family: var(--font-body);
+  font-size: .76rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  transition: background-color .25s var(--ease);
+}
+.cookie-notice-btn:hover{ background: #a95c22; }
 
 /* ---------- Utility ---------- */
 .visually-hidden{

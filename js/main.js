@@ -107,4 +107,20 @@
 
   /* Batch card — today's date could be shown near the label if needed */
   document.getElementById("year").textContent = new Date().getFullYear();
+
+  /* Cookie notice — informational only, this site sets no cookies */
+  var cookieNotice = document.getElementById("cookieNotice");
+  var cookieAccept = document.getElementById("cookieAccept");
+  if (cookieNotice && cookieAccept) {
+    var ACK_KEY = "ambar-cookie-ack";
+    var alreadyAcked = false;
+    try { alreadyAcked = localStorage.getItem(ACK_KEY) === "1"; } catch (err) {}
+    if (!alreadyAcked) {
+      cookieNotice.removeAttribute("hidden");
+    }
+    cookieAccept.addEventListener("click", function () {
+      cookieNotice.setAttribute("hidden", "");
+      try { localStorage.setItem(ACK_KEY, "1"); } catch (err) {}
+    });
+  }
 })();
