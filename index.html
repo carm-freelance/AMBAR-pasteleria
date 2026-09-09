@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ámbar — Pastelería de autor y obrador artesanal</title>
+<meta name="description" content="Ámbar es un obrador de alta pastelería bajo pedido limitado: doce piezas al día, fermentaciones largas y producto de temporada. Reserva tu pieza con 48 horas de antelación.">
+<meta property="og:title" content="Ámbar — Pastelería de autor">
+<meta property="og:description" content="Obrador artesanal bajo pedido limitado. Doce piezas al día, fermentaciones largas y producto de temporada.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/hero-pieza.jpg">
+<meta name="theme-color" content="#F6EFE2">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<!-- Sprite de iconos -->
+<svg class="visually-hidden" aria-hidden="true">
+  <defs>
+    <symbol id="icon-arrow-right" viewBox="0 0 24 24"><path d="M4 12h16M14 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="icon-leaf" viewBox="0 0 24 24"><path d="M20 4c.6 7-2 15-15 15C4 9 11 4 20 4Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M6.5 17.5C10 13 13.5 9.5 19 5.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+    <symbol id="icon-hourglass" viewBox="0 0 24 24"><path d="M6 3h12M6 21h12M7 3c0 5 3.5 6.5 5 8 1.5-1.5 5-3 5-8M7 21c0-5 3.5-6.5 5-8 1.5 1.5 5 3 5 8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-seal" viewBox="0 0 24 24"><circle cx="12" cy="10" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8.5 15.5L7 22l5-2.5L17 22l-1.5-6.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9.3 10l1.8 1.8 3.6-3.8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-badge" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8.5 12.3l2.2 2.2 4.3-4.6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-chevron-down" viewBox="0 0 24 24"><path d="M5 9l7 7 7-7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24"><path d="M5 13l4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-box" viewBox="0 0 24 24"><path d="M3 8l9-4 9 4-9 4-9-4Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M3 8v9l9 4 9-4V8M12 12v9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-whatsapp" viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-3.6-6.7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M12 4a8 8 0 0 0-6.9 12l-1 3.9 4-1a8 8 0 0 0 3.9 1" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 8.7c.2 2.7 2.6 5.1 5.3 5.3.7 0 .7-1 .2-1.5l-1-1-1.2.6c-.6-.3-1.5-1.2-1.8-1.8l.6-1.2-1-1c-.5-.5-1.5-.5-1.5.2" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-instagram" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M4 6.5l8 6.5 8-6.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </defs>
+</svg>
+
+<header class="site-header" id="top">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <span class="brand-mark">Ámbar</span>
+      <span class="brand-sub">Pastelería de autor</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Navegación principal">
+      <ul>
+        <li><a href="#materia">La Materia</a></li>
+        <li><a href="#proceso">El Proceso</a></li>
+        <li><a href="#carta">La Carta</a></li>
+        <li><a href="#encargos">Encargos</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn-primary" href="#encargos">
+        <span>Reservar pieza</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Abrir menú">
+        <svg class="icon-open" aria-hidden="true"><use href="#icon-menu"/></svg>
+        <svg class="icon-close" aria-hidden="true"><use href="#icon-close"/></svg>
+      </button>
+    </div>
+  </div>
+
+</header>
+
+<nav class="mobile-nav" id="mobileNav" aria-label="Navegación móvil">
+  <ul>
+    <li><a href="#materia">La Materia</a></li>
+    <li><a href="#proceso">El Proceso</a></li>
+    <li><a href="#carta">La Carta</a></li>
+    <li><a href="#encargos">Encargos</a></li>
+  </ul>
+  <a class="btn btn-primary" href="#encargos">
+    <span>Reservar pieza</span>
+    <svg aria-hidden="true"><use href="#icon-arrow-right"/></svg>
+  </a>
+</nav>
+
+<main id="contenido">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <span class="eyebrow">Obrador de autor · Piezas limitadas bajo reserva</span>
+        <h1>El tiempo es el <em>ingrediente</em> que no se acelera.</h1>
+        <p>Ámbar es un obrador de alta pastelería: doce piezas al día, horneadas bajo pedido con fermentaciones largas, mantequilla cruda y fruta de temporada recién cortada.</p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#encargos">
+            <span>Reservar mi pieza</span>
+            <svg aria-hidden="true"><use href="#icon-arrow-right"/></svg>
+          </a>
+          <a class="btn btn-text" href="#carta">Ver la carta de temporada ↓</a>
+        </div>
+
+        <div class="batch-card">
+          <div class="batch-card-top">
+            <div>
+              <span class="label">Registro del obrador</span>
+              <p class="piece-name">Ceniza de Cacao</p>
+            </div>
+            <div class="count">
+              <small>Disponibles hoy</small>
+              05 / 12
+            </div>
+          </div>
+          <div class="batch-bar"><span style="width:42%"></span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="hero-frame">
+          <div class="hero-photo">
+            <img src="images/hero-pieza.jpg" alt="Pieza de pastelería de autor con acabado en pan de oro, obrador Ámbar" width="1400" height="2097" loading="eager">
+            <div class="hero-photo-caption">
+              <span class="tag">Pieza destacada</span>
+              <h3>Ceniza de Cacao</h3>
+            </div>
+          </div>
+          <div class="hero-caption-row">
+            <span class="cert"><svg aria-hidden="true"><use href="#icon-badge"/></svg> Sello de temporada</span>
+            <span class="price">44 €</span>
+          </div>
+        </div>
+        <div class="hero-tag">
+          <span class="icon"><svg aria-hidden="true"><use href="#icon-hourglass"/></svg></span>
+          <p><strong>Fermentación</strong>36 horas de reposo en frío antes de hornear.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PILARES -->
+  <section class="pillars">
+    <div class="wrap">
+      <div class="pillar reveal">
+        <span class="icon"><svg aria-hidden="true"><use href="#icon-seal"/></svg></span>
+        <div>
+          <h4>Doce piezas al día</h4>
+          <p>Un lote limitado y numerado. Cuando se agota, el obrador cierra encargos hasta el día siguiente.</p>
+        </div>
+      </div>
+      <div class="pillar reveal">
+        <span class="icon"><svg aria-hidden="true"><use href="#icon-hourglass"/></svg></span>
+        <div>
+          <h4>Fermentaciones largas</h4>
+          <p>Masa madre y mantequillas maduran entre 24 y 48 horas antes de tomar forma.</p>
+        </div>
+      </div>
+      <div class="pillar reveal">
+        <span class="icon"><svg aria-hidden="true"><use href="#icon-leaf"/></svg></span>
+        <div>
+          <h4>Producto de temporada</h4>
+          <p>La carta cambia con la cosecha: solo entra lo que está en su mejor momento.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LA MATERIA -->
+  <section id="materia">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">La Materia</span>
+          <h2 class="display">Todo empieza por lo que no se ve.</h2>
+        </div>
+        <p class="lede">Trabajamos con proveedores pequeños y materia prima sin procesar: lo que entra al obrador define lo que sale de él.</p>
+      </div>
+
+      <div class="specimens">
+        <article class="specimen reveal">
+          <div class="specimen-photo">
+            <img src="images/materia-harina.jpg" alt="Pan artesanal espolvoreado con harina sobre superficie de madera" width="1000" height="1250" loading="lazy">
+            <span class="specimen-index">Espécimen 01</span>
+          </div>
+          <div class="specimen-body">
+            <span class="specimen-kicker">Cereales &amp; fermento</span>
+            <h3>Molienda de piedra y fermento propio</h3>
+            <p>Harinas de trigo de variedad antigua, molidas en frío para conservar el germen y el aroma. El fermento madre se alimenta a diario en el obrador.</p>
+            <dl class="specimen-meta">
+              <div><dt>Origen</dt><dd>Molino de trigo antiguo</dd></div>
+            </dl>
+          </div>
+        </article>
+
+        <article class="specimen reveal">
+          <div class="specimen-photo">
+            <img src="images/materia-vainilla.jpg" alt="Vainas de vainilla oscuras con semillas visibles" width="1000" height="1001" loading="lazy">
+            <span class="specimen-index">Espécimen 02</span>
+          </div>
+          <div class="specimen-body">
+            <span class="specimen-kicker">Vainas curadas</span>
+            <h3>Vainilla curada y macerada en frío</h3>
+            <p>Vainas enteras seleccionadas a mano, secadas a la sombra y maceradas semanas en frío para extraer aroma sin perder matices.</p>
+            <dl class="specimen-meta">
+              <div><dt>Curado</dt><dd>90 días</dd></div>
+            </dl>
+          </div>
+        </article>
+
+        <article class="specimen reveal">
+          <div class="specimen-photo">
+            <img src="images/materia-cacao.jpg" alt="Trozos de chocolate negro artesanal sobre tabla de cortar" width="1000" height="667" loading="lazy">
+            <span class="specimen-index">Espécimen 03</span>
+          </div>
+          <div class="specimen-body">
+            <span class="specimen-kicker">Origen único</span>
+            <h3>Cacao de origen único, tueste propio</h3>
+            <p>Tostamos pequeños lotes de cacao de origen único para controlar el punto exacto de amargor y aroma de cada ganache.</p>
+            <dl class="specimen-meta">
+              <div><dt>Pureza</dt><dd>70% mínimo</dd></div>
+            </dl>
+          </div>
+        </article>
+      </div>
+
+      <div class="materia-quote reveal">
+        <blockquote>
+          «No horneamos para llenar una vitrina. Horneamos lo que alguien va a reservar, a esperar y, por fin, a compartir.»
+        </blockquote>
+        <cite>Obrador Ámbar</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- EL PROCESO -->
+  <section id="proceso" class="section-alt">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">El Proceso</span>
+          <h2 class="display">Un ritual de cuatro tiempos.</h2>
+        </div>
+        <p class="lede">Cada pieza sigue el mismo compás, sin atajos ni prisas de última hora.</p>
+      </div>
+
+      <div class="ritual">
+        <div class="ritual-step reveal">
+          <div class="ritual-photo-col ritual-photo">
+            <img src="images/proceso-amasado.jpg" alt="Manos amasando masa artesanal junto a un rodillo de madera" width="1000" height="667" loading="lazy">
+          </div>
+          <span class="ritual-step-index">01</span>
+          <div class="ritual-text-col">
+            <span class="ritual-time">Día 1 · 06:00 — 07:00</span>
+            <h3>Amasado</h3>
+            <p>Se integran harina, mantequilla cruda y agua fría a mano, sin forzar el gluten ni acelerar el proceso con máquinas de alta velocidad.</p>
+          </div>
+        </div>
+
+        <div class="ritual-step reveal">
+          <div class="ritual-photo-col ritual-photo">
+            <img src="images/proceso-fermentacion.jpg" alt="Panes en cestas de fermentación de mimbre" width="1000" height="1499" loading="lazy">
+          </div>
+          <span class="ritual-step-index">02</span>
+          <div class="ritual-text-col">
+            <span class="ritual-time">Día 1 · 07:00 → +32 h</span>
+            <h3>Fermentación</h3>
+            <p>El fermento reposa en frío durante día y medio, ganando aroma y estructura antes que volumen.</p>
+          </div>
+        </div>
+
+        <div class="ritual-step reveal">
+          <div class="ritual-photo-col ritual-photo">
+            <img src="images/proceso-horneado.jpg" alt="Croissants recién horneados sobre una bandeja" width="1000" height="1777" loading="lazy">
+          </div>
+          <span class="ritual-step-index">03</span>
+          <div class="ritual-text-col">
+            <span class="ritual-time">Día 2 · 07:30</span>
+            <h3>Horneado</h3>
+            <p>Horno de piedra a temperatura decreciente, para una corteza pareja y una miga húmeda por dentro.</p>
+          </div>
+        </div>
+
+        <div class="ritual-step reveal">
+          <div class="ritual-photo-col ritual-photo">
+            <img src="images/proceso-reposo.jpg" alt="Pastelería enfriándose sobre una rejilla metálica" width="1000" height="667" loading="lazy">
+          </div>
+          <span class="ritual-step-index">04</span>
+          <div class="ritual-text-col">
+            <span class="ritual-time">Día 2 · 10:00 → recogida desde 12:00</span>
+            <h3>Reposo</h3>
+            <p>Cada pieza se enfría y se asienta antes de salir del obrador. Nada se entrega caliente ni a medio cuajar.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LA CARTA -->
+  <section id="carta">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">La Carta</span>
+          <h2 class="display">El libro de pedidos de esta semana.</h2>
+        </div>
+        <p class="lede">Cinco piezas en carta esta temporada, doce unidades repartidas entre ellas cada día. Reserva con 48 horas de antelación.</p>
+      </div>
+
+      <div style="overflow-x:auto;">
+      <table class="carta-table reveal">
+        <thead>
+          <tr>
+            <th>Pieza</th>
+            <th class="num">Ración</th>
+            <th class="num">Precio</th>
+            <th class="num"><span class="visually-hidden">Notas de cata</span></th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr class="carta-row">
+            <td>
+              <div class="piece-cell">
+                <span class="piece-thumb"><img src="images/carta-cacao.jpg" alt="" width="900" height="1350" loading="lazy"></span>
+                <div>
+                  <h3>Ceniza de Cacao</h3>
+                  <p class="piece-desc">Bizcocho de cacao tostado, ganache de origen único y un velo de cacao amargo.</p>
+                </div>
+              </div>
+            </td>
+            <td class="col-ration">16 cm · 6 pers.</td>
+            <td class="col-price">44 €</td>
+            <td class="col-toggle">
+              <button class="notes-toggle" aria-expanded="false" aria-controls="notes-1">
+                <span>Notas de cata</span>
+                <svg aria-hidden="true"><use href="#icon-chevron-down"/></svg>
+              </button>
+            </td>
+          </tr>
+          <tr class="notes-row" id="notes-1" hidden>
+            <td colspan="4">
+              <div class="notes-inner"><div class="notes-content"><div class="notes-content-pad">
+                <span class="piece-desc-mobile">Bizcocho de cacao tostado, ganache de origen único y un velo de cacao amargo.</span>
+                <span class="notes-label">Notas de cata</span>
+                <p class="notes-text">Amargor limpio con final ahumado; recuerda al café de tueste oscuro y a la piel de naranja.</p>
+                <p class="pairing"><strong>Maridaje sugerido:</strong> vino dulce oxidativo o café solo.</p>
+              </div></div></div>
+            </td>
+          </tr>
+
+          <tr class="carta-row">
+            <td>
+              <div class="piece-cell">
+                <span class="piece-thumb"><img src="images/carta-queso.jpg" alt="" width="900" height="1200" loading="lazy"></span>
+                <div>
+                  <h3>Queso de Cabra y Nuez</h3>
+                  <p class="piece-desc">Base de queso de cabra curado, nuez garrapiñada y miel de temporada.</p>
+                </div>
+              </div>
+            </td>
+            <td class="col-ration">18 cm · 8 pers.</td>
+            <td class="col-price">42 €</td>
+            <td class="col-toggle">
+              <button class="notes-toggle" aria-expanded="false" aria-controls="notes-2">
+                <span>Notas de cata</span>
+                <svg aria-hidden="true"><use href="#icon-chevron-down"/></svg>
+              </button>
+            </td>
+          </tr>
+          <tr class="notes-row" id="notes-2" hidden>
+            <td colspan="4">
+              <div class="notes-inner"><div class="notes-content"><div class="notes-content-pad">
+                <span class="piece-desc-mobile">Base de queso de cabra curado, nuez garrapiñada y miel de temporada.</span>
+                <span class="notes-label">Notas de cata</span>
+                <p class="notes-text">Cremoso con un punto ácido muy suave y un final tostado a nuez caramelizada.</p>
+                <p class="pairing"><strong>Maridaje sugerido:</strong> vino generoso o un oporto joven.</p>
+              </div></div></div>
+            </td>
+          </tr>
+
+          <tr class="carta-row">
+            <td>
+              <div class="piece-cell">
+                <span class="piece-thumb"><img src="images/carta-bergamota.jpg" alt="" width="900" height="1200" loading="lazy"></span>
+                <div>
+                  <h3>Bergamota y Merengue</h3>
+                  <p class="piece-desc">Crema de bergamota, base sableé y merengue tostado a soplete.</p>
+                </div>
+              </div>
+            </td>
+            <td class="col-ration">16 cm · 6 pers.</td>
+            <td class="col-price">40 €</td>
+            <td class="col-toggle">
+              <button class="notes-toggle" aria-expanded="false" aria-controls="notes-3">
+                <span>Notas de cata</span>
+                <svg aria-hidden="true"><use href="#icon-chevron-down"/></svg>
+              </button>
+            </td>
+          </tr>
+          <tr class="notes-row" id="notes-3" hidden>
+            <td colspan="4">
+              <div class="notes-inner"><div class="notes-content"><div class="notes-content-pad">
+                <span class="piece-desc-mobile">Crema de bergamota, base sableé y merengue tostado a soplete.</span>
+                <span class="notes-label">Notas de cata</span>
+                <p class="notes-text">Cítrico y floral, con una acidez viva y un ligero recuerdo ahumado del merengue tostado.</p>
+                <p class="pairing"><strong>Maridaje sugerido:</strong> té blanco o un cava brut nature.</p>
+              </div></div></div>
+            </td>
+          </tr>
+
+          <tr class="carta-row">
+            <td>
+              <div class="piece-cell">
+                <span class="piece-thumb"><img src="images/carta-bosque.jpg" alt="" width="900" height="600" loading="lazy"></span>
+                <div>
+                  <h3>Bosque de Otoño</h3>
+                  <p class="piece-desc">Frutos rojos macerados, bizcocho de almendra y chantilly ligera de vainilla.</p>
+                </div>
+              </div>
+            </td>
+            <td class="col-ration">18 cm · 8 pers.</td>
+            <td class="col-price">46 €</td>
+            <td class="col-toggle">
+              <button class="notes-toggle" aria-expanded="false" aria-controls="notes-4">
+                <span>Notas de cata</span>
+                <svg aria-hidden="true"><use href="#icon-chevron-down"/></svg>
+              </button>
+            </td>
+          </tr>
+          <tr class="notes-row" id="notes-4" hidden>
+            <td colspan="4">
+              <div class="notes-inner"><div class="notes-content"><div class="notes-content-pad">
+                <span class="piece-desc-mobile">Frutos rojos macerados, bizcocho de almendra y chantilly ligera de vainilla.</span>
+                <span class="notes-label">Notas de cata</span>
+                <p class="notes-text">Fruta fresca y ácida sobre una textura aireada, con un fondo suave de vainilla.</p>
+                <p class="pairing"><strong>Maridaje sugerido:</strong> espumoso rosado bien frío.</p>
+              </div></div></div>
+            </td>
+          </tr>
+
+          <tr class="carta-row">
+            <td>
+              <div class="piece-cell">
+                <span class="piece-thumb"><img src="images/carta-vainilla.jpg" alt="" width="900" height="675" loading="lazy"></span>
+                <div>
+                  <h3>Vainilla de Origen</h3>
+                  <p class="piece-desc">Bizcocho de mantequilla, crema de vainilla en rama y glaseado mate.</p>
+                </div>
+              </div>
+            </td>
+            <td class="col-ration">16 cm · 6 pers.</td>
+            <td class="col-price">38 €</td>
+            <td class="col-toggle">
+              <button class="notes-toggle" aria-expanded="false" aria-controls="notes-5">
+                <span>Notas de cata</span>
+                <svg aria-hidden="true"><use href="#icon-chevron-down"/></svg>
+              </button>
+            </td>
+          </tr>
+          <tr class="notes-row" id="notes-5" hidden>
+            <td colspan="4">
+              <div class="notes-inner"><div class="notes-content"><div class="notes-content-pad">
+                <span class="piece-desc-mobile">Bizcocho de mantequilla, crema de vainilla en rama y glaseado mate.</span>
+                <span class="notes-label">Notas de cata</span>
+                <p class="notes-text">Dulzor contenido y un aroma profundo a vainilla natural, con una miga muy húmeda.</p>
+                <p class="pairing"><strong>Maridaje sugerido:</strong> café con leche o un vino blanco dulce.</p>
+              </div></div></div>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+      </div>
+
+      <div class="carta-foot reveal">
+        <p>Los precios incluyen caja de transporte isotérmica. Fuera de temporada, algunas piezas se sustituyen por su equivalente de cosecha.</p>
+        <a class="btn btn-ghost" href="#encargos">
+          <span>Reservar una pieza</span>
+          <svg aria-hidden="true"><use href="#icon-arrow-right"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENCARGOS -->
+  <section id="encargos" class="section-alt">
+    <div class="wrap order-grid">
+      <div class="order-info reveal">
+        <span class="eyebrow">Encargos</span>
+        <h2 class="display">Solicita tu pieza.</h2>
+        <p>Debido al reposo de nuestras masas y fermentos, necesitamos un mínimo de 48 horas de antelación para preparar cualquier encargo.</p>
+
+        <div class="order-points">
+          <div class="order-point">
+            <svg aria-hidden="true"><use href="#icon-check"/></svg>
+            <div>
+              <strong>Confirmación personal</strong>
+              <p>Te confirmamos disponibilidad y horario de recogida por correo o teléfono en menos de 24 horas.</p>
+            </div>
+          </div>
+          <div class="order-point">
+            <svg aria-hidden="true"><use href="#icon-box"/></svg>
+            <div>
+              <strong>Recogida en el obrador</strong>
+              <p>Cada pieza sale en su propia caja isotérmica, lista para transportar sin perder frío ni forma.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-alt">
+          <p>¿Prefieres algo más directo?</p>
+          <a class="whatsapp-link" href="https://wa.me/34600000000?text=Hola%2C%20quiero%20reservar%20una%20pieza%20de%20Ámbar" target="_blank" rel="noopener">
+            <svg aria-hidden="true"><use href="#icon-whatsapp"/></svg>
+            Escríbenos por WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <form class="order-form reveal" id="orderForm" novalidate>
+        <div class="form-grid">
+          <div class="form-row-2">
+            <div class="field">
+              <label for="f-nombre">Nombre completo</label>
+              <input type="text" id="f-nombre" name="nombre" placeholder="Nombre y apellidos" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="f-contacto">Correo o teléfono</label>
+              <input type="text" id="f-contacto" name="contacto" placeholder="tu@correo.com" autocomplete="email" required>
+            </div>
+          </div>
+
+          <div class="form-row-2">
+            <div class="field">
+              <label for="f-pieza">Pieza deseada</label>
+              <div class="select-wrap">
+                <select id="f-pieza" name="pieza" required>
+                  <option value="">Selecciona una pieza</option>
+                  <option>Ceniza de Cacao — 44 €</option>
+                  <option>Queso de Cabra y Nuez — 42 €</option>
+                  <option>Bergamota y Merengue — 40 €</option>
+                  <option>Bosque de Otoño — 46 €</option>
+                  <option>Vainilla de Origen — 38 €</option>
+                  <option>Aún no lo sé, quiero que me asesoren</option>
+                </select>
+                <svg aria-hidden="true"><use href="#icon-chevron-down"/></svg>
+              </div>
+            </div>
+            <div class="field">
+              <label for="f-fecha">Fecha deseada de recogida</label>
+              <input type="date" id="f-fecha" name="fecha" required>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="f-mensaje">Alergias, dedicatoria u horario preferido</label>
+            <textarea id="f-mensaje" name="mensaje" rows="3" placeholder="Cuéntanos cualquier detalle importante para tu encargo"></textarea>
+          </div>
+
+          <div class="form-submit">
+            <button class="btn btn-primary" type="submit">
+              <span>Enviar solicitud</span>
+              <svg aria-hidden="true"><use href="#icon-arrow-right"/></svg>
+            </button>
+            <p class="form-fineprint">Al enviar se abrirá tu programa de correo con la solicitud lista para revisar y mandar al obrador.</p>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-photo"><img src="images/footer-obrador.jpg" alt="" loading="lazy"></div>
+  <div class="wrap footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="brand-mark">Ámbar</span>
+        <p>Pastelería de autor y obrador artesanal bajo pedido limitado. Doce piezas al día, fermentaciones largas y producto de temporada.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Ámbar en Instagram"><svg aria-hidden="true"><use href="#icon-instagram"/></svg></a>
+          <a href="mailto:pedidos@ambar.example" aria-label="Escribir a Ámbar por correo"><svg aria-hidden="true"><use href="#icon-mail"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Horario del obrador</h4>
+        <div class="hours-row"><span>Miércoles a sábado</span><span>10:00 — 19:00</span></div>
+        <div class="hours-row"><span>Domingo</span><span>10:00 — 14:00</span></div>
+        <div class="hours-row"><span>Lunes y martes</span><span>Reposo &amp; creación</span></div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Obrador &amp; contacto</h4>
+        <address>
+          Calle del Obrador, 14<br>
+          [Tu ciudad]<br>
+          <a href="tel:+34600000000">+34 600 00 00 00</a><br>
+          <a href="mailto:pedidos@ambar.example">pedidos@ambar.example</a>
+        </address>
+      </div>
+
+      <div class="footer-col">
+        <h4>Sello del obrador</h4>
+        <div class="footer-seal">
+          <span class="stamp">Obrador certificado</span>
+          <span class="lote">N.º 07</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> Ámbar. Todos los derechos reservados.</span>
+      <span>Obrador artesanal de autor</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
